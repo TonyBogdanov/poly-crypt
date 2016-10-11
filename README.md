@@ -2,7 +2,7 @@
 
 [![Buy Me a Coffee](http://static.tonybogdanov.com/github/coffee.svg)](http://ko-fi.co/1236KUKJNC96B)
 
-[Demo & Documentation](http://tonybogdanov.github.io/poly-crypt/bower_components/poly-crypt/)
+[Demo & Documentation](http://tonybogdanov.github.io/poly-crypt/bower_components/poly-crypt/index.html)
 
 `<poly-crypt>` provides a family of cryptographic algorithms through a [Polymer](https://polymer-project.org) element.
 
