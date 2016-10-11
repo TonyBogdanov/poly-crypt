@@ -11,11 +11,14 @@
 
     <link rel="import" href="../../polymer/polymer.html">
     <link rel="import" href="../../paper-styles/demo-pages.html">
-    <link rel="import" href="../poly-crypt.html">
+    <link rel="import" href="x-demo.html">
 </head>
 <body unresolved>
 
-
+<x-demo algorithm="md5" input="Hello World"></x-demo><hr />
+<x-demo algorithm="sha1" input="Hello World"></x-demo><hr />
+<x-demo algorithm="base64encode" input="Hello World"></x-demo><hr />
+<x-demo algorithm="base64decode" input="SGVsbG8gV29ybGQ="></x-demo><hr />
 
 </body>
 </html>
