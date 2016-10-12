@@ -36,14 +36,16 @@ Supported algorithms are:
              * Use this to specify the name of the algorithm.
              */
             algorithm:                  {
-                type:                   String
+                type:                   String,
+                observer:               '_algorithmChanged'
             },
 
             /**
              * Use this to specify the input string to be encrypted.
              */
             input:                      {
-                type:                   String
+                type:                   String,
+                observer:               '_inputChanged'
             },
 
             /**
@@ -71,6 +73,18 @@ Supported algorithms are:
             }
         },
 
+        _algorithmChanged:              function() {
+            if(this.auto) {
+                this.encrypt();
+            }
+        },
+
+        _inputChanged:                  function() {
+            if(this.auto) {
+                this.encrypt();
+            }
+        },
+
         /**
          * Performs encryption and populates `output`.
          * Both `algorithm` and `input` must be set for this to run.
@@ -87,12 +101,6 @@ Supported algorithms are:
                         this.algorithm);
             }
             this._setOutput(window.POLY_CRYPT[this.algorithm].call(this));
-        },
-
-        ready:                          function() {
-            if(this.auto) {
-                this.encrypt();
-            }
         }
     });
 </script>
