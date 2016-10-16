@@ -5,6 +5,7 @@
     "Tony Bogdanov <tonybogdanov@gmail.com>"
   ],
   "description": "A Polymer element for cryptography",
+  "keywords": ["web-components"],
   "main": "poly-crypt.html",
   "license": "MIT",
   "ignore": [
